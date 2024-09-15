@@ -1,5 +1,4 @@
-#METHACKS 2023 SUBMISSION - LIP READING AI
-## Winning submission of Best Use of Matlab
+
 
 ## Usage 
 To use the model, first you need to clone the repository: 
@@ -20,7 +19,7 @@ Then you can install the package:
 
 
 ## Note
-* ```model.predict()``` expects a batch of inputs. We only have one input that we are going to be passing through our model so we need to wrap it inside of another set of arrays.
+* ```model.predict()``` expects a batch of inputs. There is only have one input that we are going to be passing through our model so we need to wrap it inside of another set of arrays.
   * For example, ```yhat = model.predict(tf.expand_dims(video, axis=0))``` will do this relatively easily. 
   * This will return our predictions, which we run through the Keras CTC Decoder.
 
@@ -47,7 +46,7 @@ github.com/tensorflow/tensorflow/blob/r1.8/tensorflow/python/keras/impl/keras/ba
 Additional documentation can be found here: https://arxiv.org/abs/1611.01599
 
 ## Devpost
-https://devpost.com/software/lipread-ai
+
 
 ## Watch the demo on localhost
 https://www.youtube.com/watch?v=gd6855l01ZQ
